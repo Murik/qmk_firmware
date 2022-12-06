@@ -10,6 +10,10 @@
 
 Make example and flash for this keyboard parts:
 
+[//]: # (    qmk compile -kb skidea75 -km default)
+[//]: # (    qmk config user.keyboard=skidea75)
+
+    cd qmk_firmware/
     make skidea75:default:avrdude-split-left
     make skidea75:default:avrdude-split-right
 
@@ -18,6 +22,8 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. 
 
 [Base split keyboards info](https://docs.qmk.fm/#/feature_split_keyboard)
+
+https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split
 
 ## Bootloader
 

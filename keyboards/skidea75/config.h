@@ -48,8 +48,8 @@ COLS = number of cols per side which curently needs to be equal so there are bla
 /* Left side matrix */
 #define MATRIX_ROW_PINS { D4, D7, E6, B4, B5 }
 /* The last NO_PIN are dummie to make the same size as MATRIX_ROW_PINS_RIGHT. */
-//#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2, NO_PIN } //inverse?
-#define MATRIX_COL_PINS { B2, B3, B1, F7, F6, F5, F4, NO_PIN } //inversed rev1
+#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2, NO_PIN } //inverse?
+//#define MATRIX_COL_PINS { B2, B3, B1, F7, F6, F5, F4, NO_PIN } //inversed rev1
 /* Right side matrix */
 #define MATRIX_ROW_PINS_RIGHT { D4, D7, E6, B4, B5 }
 #define MATRIX_COL_PINS_RIGHT { F4, F5, F6, F7, B1, B3, B2, B6 }
@@ -71,8 +71,8 @@ COLS = number of cols per side which curently needs to be equal so there are bla
 #define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
 
 /* Use I2C or Serial, not both */
-#define USE_SERIAL
-// #define USE_I2C
+//#define USE_SERIAL
+ #define USE_I2C
 
 /* Select hand configuration */
 #define MASTER_LEFT
@@ -119,3 +119,6 @@ COLS = number of cols per side which curently needs to be equal so there are bla
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
 //#define BOOTMAGIC_LITE_COLUMN 0
+
+#define BOOTMAGIC_LITE_ROW_RIGHT 5
+#define BOOTMAGIC_LITE_COLUMN_RIGHT 7
